@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero {
+    background-color: black;
+    /* background: url(hero-bg.jpg) no-repeat center center/cover; */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("../images/hero-bg.jpg");
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-text {
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    margin: 7rem;
+  }
+
+  .hero-text h2 {
+    font-size: 100px;
+  }
+  
+  .hero-text h2 span{
+    color: #54DDFF;
+  }
+  
+  .hero-text h3{
+    font-size: 50px;
+  }
+  .hero-name {
+    font-weight: bold;
+  }
+  
+  .social-nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .social-nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+  }
+  
+  .social-nav a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .social-nav a img{
+    width: 50%;
+    height: 50%;
+  }
+
+  .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
